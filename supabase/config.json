@@ -1,0 +1,23 @@
+{
+  "project_id": "eng001",
+  "org_id": "kgdrnathbmkkcqnmjawi",
+  "db": {
+    "host": "aws-0-ca-central-1.pooler.supabase.com",
+    "port": 5432,
+    "name": "postgres",
+    "user": "postgres.cmiacypghjrhcycnljjw",
+    "password": "your_password_here"
+  },
+  "api": {
+    "port": 54321,
+    "schemas": [
+      "public",
+      "auth"
+    ],
+    "extra_search_path": [
+      "public",
+      "extensions"
+    ],
+    "max_rows": 1000
+  }
+}

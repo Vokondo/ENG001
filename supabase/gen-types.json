@@ -1,0 +1,22 @@
+{
+  "typescript": {
+    "version": "5.0.4"
+  },
+  "db": {
+    "schemas": ["public"],
+    "tables": [
+      {
+        "name": "products",
+        "schema": "public"
+      },
+      {
+        "name": "listings",
+        "schema": "public"
+      },
+      {
+        "name": "violations",
+        "schema": "public"
+      }
+    ]
+  }
+}

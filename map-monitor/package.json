@@ -5,8 +5,14 @@
   "main": "src/app.ts",
   "scripts": {
     "start": "ts-node src/app.ts",
+    "dev": "ts-node-dev --respawn src/app.ts",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "db:init": "ts-node src/lib/db/init.ts",
+    "db:test": "ts-node src/lib/db/test.ts",
+    "db:migrate": "supabase db push",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop"
   },
   "dependencies": {
     "express": "^4.17.1",

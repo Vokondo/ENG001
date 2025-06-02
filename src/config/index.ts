@@ -6,10 +6,11 @@ export const config = {
     app: {
         port: process.env.PORT || 3000,
         nodeEnv: process.env.NODE_ENV || 'development',
-    },
-    supabase: {
+    },    supabase: {
         url: process.env.SUPABASE_URL!,
         anonKey: process.env.SUPABASE_ANON_KEY!,
+        serviceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
+        dbPassword: process.env.SUPABASE_DB_PASSWORD,
     },
     clerk: {
         secretKey: process.env.CLERK_SECRET_KEY!,
